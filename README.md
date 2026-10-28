@@ -1,5 +1,9 @@
 # Server Integrity
 
+> **Beta release:** I have tried to consider every test case and fix every bug I could find, but there is no guarantee that this release is perfect. Please report bugs as you find them, and I will do my best to fix them.
+
+> **Artwork note:** I am not a graphic artist—and I am actually quite bad at it—so I cloned existing Stationeers objects to create the new items. If you would like to help create original artwork, please let me know.
+
 Server Integrity gives multiplayer communities practical tools to protect player builds from unauthorized damage, deconstruction, ownership changes, and destructive console commands.
 
 ## Integrity Gun
