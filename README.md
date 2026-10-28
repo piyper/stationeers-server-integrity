@@ -19,7 +19,7 @@ On multiplayer servers, administrators may protect any structure. Other players 
 
 ## Ownership Gun
 
-The Ownership Gun lets a server administrator assign a structure to a player. Label the gun with the intended online player's name, aim at the structure, and hold the primary action until it completes. Leaving the gun at its default name assigns ownership to the administrator using it.
+The Ownership Gun lets a server administrator assign a structure to a player. Label the gun with the intended online player's name and aim at the structure. Leaving the gun at its default name assigns ownership to the administrator using it.
 
 Use the gun's selector to choose between changing only the target and changing its connected construction. The target popup reports the current owner by name when that owner can be identified. Ownership changes persist with the world save.
 
@@ -38,7 +38,7 @@ This provides a quick visual check of a protected build and makes gaps in its pr
 
 The mod prevents non-administrators from using mutating `thing` console commands such as spawning and deleting objects. This closes an easy route around normal building and ownership rules while leaving non-mutating commands available.
 
-Server Integrity is intended to deter accidental damage and common griefing on community servers. It does not replace access control: hazardous machinery, printers, consoles, and security equipment should still be kept behind secured doors where appropriate.
+Server Integrity is intended to deter common griefing on community servers. It does not replace access control: hazardous machinery, printers, consoles, and security equipment should still be kept behind secured doors where appropriate.
 
 ## Manufacturing and installation
 
@@ -50,4 +50,4 @@ The Integrity Gun, Ownership Gun, and Integrity Scanner SPU are available from t
 
 The tools are also available through the creative spawn menu.
 
-For multiplayer servers using Server Integrity, install the mod on the dedicated server and every connecting client. A client may leave the mod installed when joining servers that do not use it.
+For multiplayer servers using Server Integrity, install the mod on the dedicated server and every connecting client. A client may leave the mod installed when joining servers that do not use it, but attempting to create one of the mod's items on such a server may produce an error.
