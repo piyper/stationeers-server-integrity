@@ -1,0 +1,69 @@
+[h1]Server Integrity[/h1]
+
+[img]https://raw.githubusercontent.com/piyper/stationeers-server-integrity/main/About/WorkshopImages/01-integrity-scanner-overview.png[/img]
+[img]https://raw.githubusercontent.com/piyper/stationeers-server-integrity/main/About/WorkshopImages/02-integrity-scanner-connected.png[/img]
+[img]https://raw.githubusercontent.com/piyper/stationeers-server-integrity/main/About/WorkshopImages/03-integrity-gun-popup.png[/img]
+
+[b]BETA RELEASE:[/b] I have tried to consider every test case and fix every bug I could find, but there is no guarantee that this release is perfect. Please report bugs as you find them, and I will do my best to fix them.
+
+[b]Artwork note:[/b] I am not a graphic artist—and I am actually quite bad at it—so I cloned existing Stationeers objects to create the new items. If you would like to help create original artwork, please let me know.
+
+Server Integrity gives multiplayer communities practical tools to protect player builds from unauthorized damage, deconstruction, ownership changes, and destructive console commands.
+
+[h2]Integrity Gun[/h2]
+
+[b]Multiplayer ownership rule:[/b] Unless you are a server administrator, the Integrity Gun changes only structures you own. Connected, matching, and blast-area modes skip structures owned by other players.
+
+[b]Ownership notice:[/b] Stationeers may occasionally record an object's ownership incorrectly. If the Integrity Gun does not recognize part of your build as yours, ask a server administrator to correct the structure's ownership.
+
+Aim at a structure and hold the primary action until the progress bar completes. The gun changes protection according to its selected mode. Right-click cycles through the modes:
+
+[list]
+[*][b]Toggle target[/b] — changes only the object being aimed at.
+[*][b]Toggle connected[/b] — changes the target and the construction connected to it.
+[*][b]Toggle matching[/b] — changes connected objects of the same type as the target. For example, targeting a window affects matching windows in that connected build without changing its frames.
+[*][b]Toggle blast areas[/b] — finds hazardous equipment associated with the connected build and changes the equipment and nearby structures together. This lets you restore normal explosion damage around furnaces or tanks, so you can preserve the real consequences of mistakes.
+[/list]
+
+The action popup shows whether the current use will make the selected objects destructible or indestructible. Protected objects cannot be damaged or normally deconstructed. Changes persist when the world is saved and restarted.
+
+On multiplayer servers, administrators may protect any structure. Other players may use the gun only on structures they own. Single-player users have unrestricted access.
+
+[h2]Ownership Gun[/h2]
+
+The Ownership Gun lets a server administrator assign a structure to a player. Label the gun with the intended online player's name and aim at the structure. Leaving the gun at its default name assigns ownership to the administrator using it.
+
+Use the gun's selector to choose between changing only the target and changing its connected construction. The target popup reports the current owner by name when that owner can be identified. Ownership changes persist with the world save.
+
+The Ownership Gun cannot be used by non-administrators on a multiplayer server. It is unrestricted in single-player.
+
+[h2]Integrity Scanner SPU[/h2]
+
+Insert the Integrity Scanner SPU into Sensor Lenses and power them on to inspect nearby construction:
+
+[list]
+[*][b]Red[/b] — protected from damage and deconstruction.
+[*][b]Green[/b] — normal damage and deconstruction are enabled.
+[/list]
+
+This provides a quick visual check of a protected build and makes gaps in its protection easier to find.
+
+[h2]Additional server protection[/h2]
+
+The mod prevents non-administrators from using mutating thing console commands such as spawning and deleting objects. This closes an easy route around normal building and ownership rules while leaving non-mutating commands available.
+
+Server Integrity is intended to deter common griefing on community servers. It does not replace access control: hazardous machinery, printers, consoles, and security equipment should still be kept behind secured doors where appropriate.
+
+[h2]Manufacturing and installation[/h2]
+
+The Integrity Gun, Ownership Gun, and Integrity Scanner SPU are available from the [b]Security Printer[/b]. Each recipe requires:
+
+[list]
+[*]1 g gold
+[*]1 energy
+[*]10 seconds
+[/list]
+
+The tools are also available through the creative spawn menu.
+
+For multiplayer servers using Server Integrity, install the mod on the dedicated server and every connecting client. A client may leave the mod installed when joining servers that do not use it, but attempting to create one of the mod's items on such a server may produce an error.
