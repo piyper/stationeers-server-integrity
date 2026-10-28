@@ -48,4 +48,4 @@ The Integrity Gun, Ownership Gun, and Integrity Scanner SPU are available from t
 
 The tools are also available through the creative spawn menu.
 
-Dedicated server installation is required. Client installation is optional.
+For multiplayer servers using Server Integrity, install the mod on the dedicated server and every connecting client. A client may leave the mod installed when joining servers that do not use it.
