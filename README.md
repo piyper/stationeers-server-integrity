@@ -4,6 +4,8 @@ Server Integrity gives multiplayer communities practical tools to protect player
 
 ## Integrity Gun
 
+> **Multiplayer ownership rule:** Unless you are a server administrator, the Integrity Gun changes **only structures you own**. Connected, matching, and blast-area modes skip structures owned by other players.
+
 Aim at a structure and hold the primary action until the progress bar completes. The gun changes protection according to its selected mode. Right-click cycles through the modes:
 
 - **Toggle target** — changes only the object being aimed at.
