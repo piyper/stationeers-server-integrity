@@ -12,7 +12,7 @@ $toolsRoot = Join-Path $modsRoot ".tools\WorkshopPublisher"
 $steamCmd = Join-Path $toolsRoot "steamcmd\steamcmd.exe"
 $vdfPath = Join-Path $toolsRoot "server-integrity-workshop.vdf"
 $aboutPath = Join-Path $liveRoot "About\About.xml"
-$sourceAboutPath = Join-Path $sourceRoot "Package\About\About.xml"
+$sourceAboutPath = Join-Path $sourceRoot "Package\About\About.template.xml"
 $descriptionPath = Join-Path $sourceRoot "Workshop\Description.bbcode.txt"
 $previewPath = Join-Path $liveRoot "About\Preview.png"
 
