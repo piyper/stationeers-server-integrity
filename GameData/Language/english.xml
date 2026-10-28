@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>English</Name>
+  <Code>EN</Code>
+  <Font>font_english</Font>
+  <Things>
+    <RecordThing>
+      <Key>ItemIntegrityGun</Key>
+      <Value>Integrity Gun</Value>
+      <Description>Toggles whether owned objects can take damage or be deconstructed. Server administrators may affect any object. Off affects only the target; On affects the connected construction.</Description>
+    </RecordThing>
+    <RecordThing>
+      <Key>ItemOwnershipGun</Key>
+      <Value>Ownership Gun</Value>
+      <Description>Administrative tool that assigns structure ownership from an online player name or numeric Steam ID written on the gun. Off affects only the target; On affects the connected construction.</Description>
+    </RecordThing>
+    <RecordThing>
+      <Key>ItemSensorProcessingUnitIntegrityScanner</Key>
+      <Value>Integrity Scanner SPU</Value>
+      <Description>Insert into Sensor Lenses to display protected structures in red and destructible structures in green within 50 metres.</Description>
+    </RecordThing>
+  </Things>
+</Language>

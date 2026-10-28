@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetadata>
+  <Name>Server Integrity</Name>
+  <ModID>ca.piyper.stationeers.integritygun</ModID>
+  <Author>Piyper</Author>
+  <Version>0.6.7</Version>
+  <Description>
+    [h1]Server Integrity[/h1]
+    Adds tools based on the Spray Gun for controlling structure integrity and ownership. State is enforced by the server, synchronized in multiplayer, and stored in the world save.
+
+    Also adds an Integrity Scanner SPU for Sensor Lenses. Protected structures appear red and destructible structures appear green.
+  </Description>
+  <ChangeLog>
+    [h2]0.6.7[/h2]
+    Completes the project rename to Server Integrity across the source folder, project, namespace, assembly, DLL, and log identity. The stable mod ID and item names are unchanged.
+
+    [h2]0.6.6[/h2]
+    Toggle Blast Areas now discovers freestanding hazardous equipment within 6 metres of the selected connected construction before applying each hazard's 6-metre protection radius.
+
+    [h2]0.6.5[/h2]
+    Toggle Blast Areas uses the connected construction to discover hazardous equipment, then toggles every structure within 6 metres of those hazards whether or not those nearby structures are connected.
+
+    [h2]0.6.4[/h2]
+    Reduces the Toggle Blast Areas protection radius from 10 metres to 6 metres.
+
+    [h2]0.6.3[/h2]
+    Avoids refreshing structure damage and rendering state during synchronization when the indestructible value has not changed.
+
+    [h2]0.6.2[/h2]
+    Toggle Blast Areas now includes connected structures within 10 metres of each connected hazardous object instead of changing only the hazardous object itself.
+
+    [h2]0.6.1[/h2]
+    Synchronizes the finalized Steam-ID owner after a newly placed structure is created so clients do not temporarily report owned objects as Unowned.
+
+    [h2]0.6.0[/h2]
+    Replaces the Integrity Gun modes with Toggle Target, Toggle Connected, Toggle Matching, and Toggle Blast Areas. Connected and matching modes use the selected target as the declarative state; blast mode uses the first connected hazardous object. Matching continues to use the exact prefab hash.
+
+    [h2]0.5.4[/h2]
+    Resolves saved Steam-ID ownership against loaded player bodies so the gun popup displays the owner's name correctly.
+
+    [h2]0.5.3[/h2]
+    Stores Integrity Gun modes directly in the native saved mode field instead of the spray-gun animator, which always reset the value to zero.
+
+    [h2]0.5.2[/h2]
+    Fixes mouse right-click mode cycling by updating during Stationeers' client-side secondary-use evaluation pass.
+
+    [h2]0.5.1[/h2]
+    Moves Integrity Gun mode cycling to the actual active-tool toggle path used by right-click.
+
+    [h2]0.5.0[/h2]
+    Adds four right-click Integrity Gun modes: protect connected, unprotect connected, hazard-aware protection with a 10 m exclusion around hazardous equipment, and matching-prefab protection within the connected construction.
+
+    [h2]0.4.22[/h2]
+    Mutating thing-command denials no longer disclose administrator command or authentication details.
+
+    [h2]0.4.21[/h2]
+    Fixed dedicated servers incorrectly treating all gun actions as single-player administrator actions.
+
+    [h2]0.4.20[/h2]
+    Removes multiplayer host-status shortcuts from Ownership Gun authorization. Every multiplayer ownership change now requires a nonempty matching server auth secret; single-player remains unrestricted.
+
+    [h2]0.4.19[/h2]
+    Restores Stationeers' delayed-action completion guard inside the Harmony prefix so gun mutations and RPCs occur only after the progress bar reaches completion.
+
+    [h2]0.4.18[/h2]
+    Network clients now always submit gun actions to the authoritative server instead of incorrectly taking the local single-player action path.
+
+    [h2]0.4.17[/h2]
+    Uses the actual network role instead of the unreliable batch-mode flag when distinguishing a local host from a dedicated-server client for administrator authorization.
+
+    [h2]0.4.16[/h2]
+    Server Integrity is required when hosting a server and optional when loaded only as a client, allowing that client to join servers that do not run the mod.
+
+    [h2]0.4.15[/h2]
+    Dedicated-server clients are no longer treated as administrators merely because the game marks them as host. Ownership Gun access now requires the matching server auth secret; single-player remains unrestricted.
+
+    [h2]0.4.14[/h2]
+    Synchronizes restored ownership and indestructible state to each client after joining so gun popups and scanner lenses reflect the authoritative saved state.
+
+    [h2]0.4.13[/h2]
+    Integrity and ownership changes now occur only after the tool's progress action completes, rather than immediately on the initial click.
+
+    [h3]Version 0.4.12[/h3]
+    Removes Steam IDs from the ownership popup. Resolved owners display by name; unresolved owners display as Unknown owner.
+
+    [h3]Version 0.4.11[/h3]
+    Blocks direct multiplayer-client use of the mutating thing spawn, spawnvel, and delete commands. Administrators retain access through the authenticated serverrun command; server console and single-player use remain unrestricted.
+
+    [h3]Version 0.4.10[/h3]
+    Shows the selected target's current owner in the Integrity Gun and Ownership Gun action popup.
+
+    [h3]Version 0.4.9[/h3]
+    Removes the inherited Spray Can slot from both custom gun prefabs and explicitly assigns all three Security Printer recipes to Tier One.
+
+    [h3]Version 0.4.8[/h3]
+    Installs the authoritative Labeller rename-request guard after world loading so it cannot interfere with dedicated-server terrain startup.
+
+    [h3]Version 0.4.7[/h3]
+    Renamed the mod to Server Integrity. Tool and item names are unchanged.
+
+    [h3]Version 0.4.6[/h3]
+    Renamed the mod to Integrity. Tool and item names are unchanged.
+
+    [h3]Version 0.4.5[/h3]
+    Indestructible objects can no longer be renamed with a Labeller or a forged rename request.
+
+    [h3]Version 0.4.4[/h3]
+    An administrator using an Ownership Gun with its default label now assigns ownership to themselves.
+
+    [h3]Version 0.4.3[/h3]
+    The Integrity Scanner SPU now uses the same Security Printer recipe as both custom guns.
+
+    [h3]Version 0.4.2[/h3]
+    Both custom guns are now printed in the Security Printer from 1 g gold, using 1 energy over 10 seconds.
+
+    [h3]Version 0.4.1[/h3]
+    The Integrity Gun and Ownership Gun no longer expose the inherited paint-can slot.
+
+    [h3]Version 0.4.0[/h3]
+    Adds the Ownership Gun, server-authoritative ownership and integrity permissions, and a common placement fix that records Steam IDs instead of temporary brain reference IDs.
+
+    [h3]Version 0.3.1[/h3]
+    Connected mode now bridges Stationeers' incomplete structural-neighbour graph using physical bounds contact, covering continuous frames, windows, faces, and attached construction pieces.
+
+    [h3]Version 0.3.0[/h3]
+    Uses the Integrity Gun's On/Off selector as Target Only and Connected Construction modes. Connected mode follows structural neighbors and attached devices.
+
+    [h3]Version 0.2.1[/h3]
+    Adds a 250 ms activation cooldown to prevent one click from toggling an object multiple times.
+
+    [h3]Version 0.2.0[/h3]
+    Adds the Integrity Scanner SPU for Sensor Lenses.
+
+    [h3]Version 0.1.0[/h3]
+    Initial release.
+  </ChangeLog>
+</ModMetadata>

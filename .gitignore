@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+*.dll
+*.dll.*
+*.pdb
+*.user
+RUNBOOK.md

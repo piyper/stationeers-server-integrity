@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SecurityPrinterRecipes>
+    <RecipeData>
+      <PrefabName>ItemIntegrityGun</PrefabName>
+      <RecipeTier>TierOne</RecipeTier>
+      <Recipe>
+        <Time>10</Time>
+        <Energy>1</Energy>
+        <Gold>1</Gold>
+      </Recipe>
+    </RecipeData>
+    <RecipeData>
+      <PrefabName>ItemOwnershipGun</PrefabName>
+      <RecipeTier>TierOne</RecipeTier>
+      <Recipe>
+        <Time>10</Time>
+        <Energy>1</Energy>
+        <Gold>1</Gold>
+      </Recipe>
+    </RecipeData>
+    <RecipeData>
+      <PrefabName>ItemSensorProcessingUnitIntegrityScanner</PrefabName>
+      <RecipeTier>TierOne</RecipeTier>
+      <Recipe>
+        <Time>10</Time>
+        <Energy>1</Energy>
+        <Gold>1</Gold>
+      </Recipe>
+    </RecipeData>
+  </SecurityPrinterRecipes>
+</GameData>

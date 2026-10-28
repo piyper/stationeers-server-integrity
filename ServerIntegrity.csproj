@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <DebugType>none</DebugType>
+    <AssemblyName>ServerIntegrity</AssemblyName>
+    <RootNamespace>ServerIntegrity</RootNamespace>
+    <GameDirectory Condition="'$(GameDirectory)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Stationeers</GameDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameDirectory)\rocketstation_Data\Managed\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="BepInEx"><HintPath>$(GameDirectory)\BepInEx\core\BepInEx.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GameDirectory)\BepInEx\core\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="LaunchPadBooster"><HintPath>$(GameDirectory)\BepInEx\plugins\StationeersLaunchPad\LaunchPadBooster.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UniTask"><HintPath>$(GameDirectory)\rocketstation_Data\Managed\UniTask.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(GameDirectory)\rocketstation_Data\Managed\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.AnimationModule"><HintPath>$(GameDirectory)\rocketstation_Data\Managed\UnityEngine.AnimationModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.PhysicsModule"><HintPath>$(GameDirectory)\rocketstation_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>$(GameDirectory)\rocketstation_Data\Managed\UnityEngine.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

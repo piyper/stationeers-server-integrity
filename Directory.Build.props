@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)..\.build\ServerIntegrity\bin\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)..\.build\ServerIntegrity\obj\</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(MSBuildThisFileDirectory)..\.build\ServerIntegrity\obj\</MSBuildProjectExtensionsPath>
+  </PropertyGroup>
+</Project>
