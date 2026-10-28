@@ -6,9 +6,9 @@ param(
 $ErrorActionPreference = "Stop"
 
 $sourceRoot = $PSScriptRoot
-$modsRoot = Split-Path -Parent $sourceRoot
-$liveRoot = Join-Path $modsRoot "ServerIntegrity"
-$toolsRoot = Join-Path $modsRoot ".tools\WorkshopPublisher"
+$documentsRoot = [Environment]::GetFolderPath("MyDocuments")
+$liveRoot = Join-Path $documentsRoot "My Games\Stationeers\mods\ServerIntegrity"
+$toolsRoot = Join-Path $documentsRoot "Stationeers Development\Tools\WorkshopPublisher"
 $steamCmd = Join-Path $toolsRoot "steamcmd\steamcmd.exe"
 $vdfPath = Join-Path $toolsRoot "server-integrity-workshop.vdf"
 $aboutPath = Join-Path $liveRoot "About\About.xml"
