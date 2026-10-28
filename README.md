@@ -9,7 +9,7 @@ Aim at a structure and hold the primary action until the progress bar completes.
 - **Toggle target** — changes only the object being aimed at.
 - **Toggle connected** — changes the target and the construction connected to it.
 - **Toggle matching** — changes connected objects of the same type as the target. For example, targeting a window affects matching windows in that connected build without changing its frames.
-- **Toggle blast areas** — finds hazardous equipment associated with the connected build and changes the equipment and nearby structures together. This lets administrators temporarily restore normal explosion damage around furnaces or tanks, then protect the area again afterward.
+- **Toggle blast areas** — finds hazardous equipment associated with the connected build and changes the equipment and nearby structures together. This lets you restore normal explosion damage around furnaces or tanks, so you can preserve the real consequences of mistakes.
 
 The action popup shows whether the current use will make the selected objects destructible or indestructible. Protected objects cannot be damaged or normally deconstructed. Changes persist when the world is saved and restarted.
 
