@@ -1,8 +1,8 @@
 [h1]Server Integrity[/h1]
 
-[img]https://raw.githubusercontent.com/piyper/stationeers-server-integrity/main/About/WorkshopImages/01-integrity-scanner-overview.png[/img]
-[img]https://raw.githubusercontent.com/piyper/stationeers-server-integrity/main/About/WorkshopImages/02-integrity-scanner-connected.png[/img]
-[img]https://raw.githubusercontent.com/piyper/stationeers-server-integrity/main/About/WorkshopImages/03-integrity-gun-popup.png[/img]
+[img]https://raw.githubusercontent.com/piyper/stationeers-server-integrity/main/Workshop/Images/01-integrity-scanner-overview.png[/img]
+[img]https://raw.githubusercontent.com/piyper/stationeers-server-integrity/main/Workshop/Images/02-integrity-scanner-connected.png[/img]
+[img]https://raw.githubusercontent.com/piyper/stationeers-server-integrity/main/Workshop/Images/03-integrity-gun-popup.png[/img]
 
 [b]BETA RELEASE:[/b] I have tried to consider every test case and fix every bug I could find, but there is no guarantee that this release is perfect. Please report bugs as you find them, and I will do my best to fix them.
 
