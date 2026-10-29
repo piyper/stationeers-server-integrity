@@ -4,44 +4,59 @@
   <ModID>ca.piyper.stationeers.integritygun</ModID>
   <Author>Piyper</Author>
   <Version>0.6.7</Version>
-  <Description>SERVER INTEGRITY
+  <Description>[h1]Server Integrity[/h1]
 
-BETA RELEASE: I have tried to consider every test case and fix every bug I could find, but there is no guarantee that this release is perfect. Please report bugs as you find them, and I will do my best to fix them.
+[b]BETA RELEASE:[/b] I have tried to consider every test case and fix every bug I could find, but there is no guarantee that this release is perfect. Please report bugs as you find them, and I will do my best to fix them.
 
-Artwork note: I am not a graphic artist—and I am actually quite bad at it—so I cloned existing Stationeers objects to create the new items. If you would like to help create original artwork, please let me know.
+[b]Artwork note:[/b] I am not a graphic artist—and I am actually quite bad at it—so I cloned existing Stationeers objects to create the new items. If you would like to help create original artwork, please let me know.
 
 Server Integrity gives multiplayer communities practical tools to protect player builds from unauthorized damage, deconstruction, ownership changes, and destructive console commands.
 
-INTEGRITY GUN
+[h2]Integrity Gun[/h2]
 
-Multiplayer ownership rule: Unless you are a server administrator, the Integrity Gun changes only structures you own. Connected, matching, and blast-area modes skip structures owned by other players.
+[b]Multiplayer ownership rule:[/b] Unless you are a server administrator, the Integrity Gun changes only structures you own. Connected, matching, and blast-area modes skip structures owned by other players.
 
-Ownership notice: Stationeers may occasionally record an object's ownership incorrectly. If the Integrity Gun does not recognize part of your build as yours, ask a server administrator to correct the structure's ownership.
+[b]Ownership notice:[/b] Stationeers may occasionally record an object's ownership incorrectly. If the Integrity Gun does not recognize part of your build as yours, ask a server administrator to correct the structure's ownership.
 
-Aim at a structure and hold the primary action until the progress bar completes. Right-click cycles through the modes:
+Aim at a structure. Right-click cycles through the modes:
 
-- Toggle target — changes only the object being aimed at.
-- Toggle connected — changes the target and the construction connected to it.
-- Toggle matching — changes connected objects of the same type as the target.
-- Toggle blast areas — changes hazardous equipment and nearby structures together, allowing normal explosion damage around furnaces or tanks so mistakes retain their real consequences.
+[list]
+[*][b]Toggle target[/b] — changes only the object being aimed at.
+[*][b]Toggle connected[/b] — changes the target and the construction connected to it.
+[*][b]Toggle matching[/b] — changes connected objects of the same type as the target.
+[*][b]Toggle blast areas[/b] — changes hazardous equipment and nearby structures together, allowing normal explosion damage around furnaces or tanks so mistakes retain their real consequences.
+[/list]
 
 Protected objects cannot be damaged or normally deconstructed. Changes persist when the world is saved and restarted.
 
-OWNERSHIP GUN
+[h2]Ownership Gun[/h2]
 
 The Ownership Gun lets a server administrator assign a structure to a player. Label the gun with the intended online player's name and aim at the structure. Leaving the default name assigns ownership to the administrator using it. Non-administrators cannot use this gun on multiplayer servers.
 
-INTEGRITY SCANNER SPU
+[h2]Integrity Scanner SPU[/h2]
 
-Insert the Integrity Scanner SPU into Sensor Lenses and power them on. Red structures are protected; green structures have normal damage and deconstruction enabled.
+Insert the Integrity Scanner SPU into Sensor Lenses and power them on:
 
-ADDITIONAL SERVER PROTECTION
+[list]
+[*][b]Red[/b] — protected from damage and deconstruction.
+[*][b]Green[/b] — normal damage and deconstruction are enabled.
+[/list]
+
+[h2]Additional Server Protection[/h2]
 
 The mod prevents non-administrators from using mutating thing console commands. It is intended to deter common griefing, but it does not replace secured doors and normal access control.
 
-MANUFACTURING AND INSTALLATION
+[h2]Manufacturing and Installation[/h2]
 
-All three tools are available from the Security Printer for 1 g gold, 1 energy, and 10 seconds. They are also available through the creative spawn menu.
+All three tools are available from the [b]Security Printer[/b]:
+
+[list]
+[*]1 g gold
+[*]1 energy
+[*]10 seconds
+[/list]
+
+They are also available through the creative spawn menu.
 
 Install the mod on multiplayer servers using it and on every connecting client. Clients may leave it installed when joining servers that do not use it, but attempting to create one of its items there may produce an error.</Description>
   <ChangeLog>
