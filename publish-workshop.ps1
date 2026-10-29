@@ -14,7 +14,7 @@ $vdfPath = Join-Path $toolsRoot "server-integrity-workshop.vdf"
 $aboutPath = Join-Path $liveRoot "About\About.xml"
 $sourceAboutPath = Join-Path $sourceRoot "Package\About\About.template.xml"
 $descriptionPath = Join-Path $sourceRoot "Workshop\Description.bbcode.txt"
-$previewPath = Join-Path $liveRoot "About\Preview.png"
+$previewPath = Join-Path $liveRoot "About\thumb.png"
 
 foreach ($requiredPath in @($steamCmd, $aboutPath, $descriptionPath, $previewPath)) {
     if (-not (Test-Path -LiteralPath $requiredPath)) {
@@ -42,6 +42,7 @@ function Write-WorkshopVdf([string]$id) {
     "contentfolder" "$contentFolder"
     "previewfile" "$previewFile"
     "visibility" "3"
+    "tags" "Mod,Tool"
     "title" "Server Integrity"
     "description" "$description"
     "changenote" "$safeChangeNote"
